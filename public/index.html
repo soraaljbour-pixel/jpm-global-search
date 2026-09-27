@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JPM Global Search</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>JPM Global Search</h1>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search JPM..."
+      >
+
+      <button id="searchButton">
+        Search
+      </button>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-type="ALL">All</button>
+      <button class="filter" data-type="PRODUCT">Products</button>
+      <button class="filter" data-type="NEWS">News</button>
+      <button class="filter" data-type="PAGE">Pages</button>
+      <button class="filter" data-type="PUBLICATION">
+        Scientific Publications
+      </button>
+      <button class="filter" data-type="PATENT">Patents</button>
+    </div>
+
+    <p id="resultCount"></p>
+
+    <div id="results"></div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
