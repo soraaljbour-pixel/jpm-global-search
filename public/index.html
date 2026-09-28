@@ -1,48 +1,131 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>JPM Global Search</title>
+  <title>Search JPM</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <header class="site-header">
+    <div class="nav-container">
+
+      <div class="logo">
+        JPM
+      </div>
+
+      <nav class="main-nav">
+        <a href="#">About JPM</a>
+        <a href="#">Products</a>
+        <a href="#">Science & Innovation</a>
+        <a href="#">News</a>
+      </nav>
+
+      <div class="nav-search">
+        🔍 Search JPM
+      </div>
+
+    </div>
+  </header>
+
+
   <main class="container">
 
-    <h1>JPM Global Search</h1>
-
-    <div class="search-box">
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="Search JPM..."
-      >
-
-      <button id="searchButton">
-        Search
-      </button>
+    <div class="breadcrumb">
+      Home / Search
     </div>
 
+    <section class="search-header">
+
+      <p class="section-label">GLOBAL SEARCH</p>
+
+      <h1>Search JPM</h1>
+
+      <p class="search-description">
+        Search across JPM products, news, scientific publications,
+        patents and website pages.
+      </p>
+
+      <div class="search-box">
+
+        <span class="search-icon">⌕</span>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search products, news, research and more…"
+          autocomplete="off"
+        >
+
+        <button id="searchButton">
+          Search
+        </button>
+
+      </div>
+
+    </section>
+
+
     <div class="filters">
-      <button class="filter active" data-type="ALL">All</button>
-      <button class="filter" data-type="PRODUCT">Products</button>
-      <button class="filter" data-type="NEWS">News</button>
-      <button class="filter" data-type="PAGE">Pages</button>
+
+      <button class="filter active" data-type="ALL">
+        All
+      </button>
+
+      <button class="filter" data-type="PRODUCT">
+        Products
+      </button>
+
+      <button class="filter" data-type="NEWS">
+        News
+      </button>
+
       <button class="filter" data-type="PUBLICATION">
         Scientific Publications
       </button>
-      <button class="filter" data-type="PATENT">Patents</button>
+
+      <button class="filter" data-type="PATENT">
+        Patents
+      </button>
+
+      <button class="filter" data-type="PAGE">
+        Pages
+      </button>
+
     </div>
 
-    <p id="resultCount"></p>
 
-    <div id="results"></div>
+    <div class="results-header">
+
+      <h2>Search Results</h2>
+
+      <p id="resultCount"></p>
+
+    </div>
+
+
+    <div id="results">
+
+      <div class="initial-message">
+
+        <div class="initial-icon">⌕</div>
+
+        <h3>Search JPM</h3>
+
+        <p>
+          Enter a keyword to search JPM.
+        </p>
+
+      </div>
+
+    </div>
 
   </main>
+
 
   <script src="script.js"></script>
 
